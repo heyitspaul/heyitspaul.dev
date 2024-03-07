@@ -1,5 +1,6 @@
 <script>
     import '../app.css';
+    import { page } from '$app/stores';
 
     const menu_links = [
         {
@@ -23,7 +24,11 @@
         <div class="flex-none">
             <ul class="menu menu-horizontal px-1">
                 {#each menu_links as link}
-                    <li><a href={link.link}>{link.name}</a></li>
+                    <li>
+                        <a href={link.link} class={link.link === $page.url.pathname ? 'active' : ''}
+                            >{link.name}</a
+                        >
+                    </li>
                 {/each}
             </ul>
         </div>
