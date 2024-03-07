@@ -18,6 +18,7 @@
     <p>I began coding in 2010 with game development using C# with XNA and then Java.</p>
     <p>I've been writing Ruby, Rails, PHP, and JavaScript code since 2014.</p>
     <p>I have a passion for web development and design.</p>
+    <p>Recently I've been exploring using TailwindCSS and SvelteKit.</p>
     <div class="spacer"></div>
     <p>
         Check out my <a href="/blog" class="text-blue-600 hover:underline">blog</a> for insights into
