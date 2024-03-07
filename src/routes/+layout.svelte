@@ -1,5 +1,6 @@
 <script>
     import '../app.css';
+    import 'devicon/devicon.min.css';
     import { page } from '$app/stores';
 
     const menu_links = [
