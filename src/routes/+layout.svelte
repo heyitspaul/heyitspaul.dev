@@ -14,6 +14,10 @@
         {
             name: 'Contact',
             link: '/contact'
+        },
+        {
+            name: 'Portfolio',
+            link: '/portfolio'
         }
     ];
 </script>
