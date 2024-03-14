@@ -121,8 +121,8 @@ $ sudo -u postgres psql
 ```
 
 ```sql
-postgres# CREATE ROLE test_app WITH CREATEDB LOGIN PASSWORD 'test_app';
-postgres# \du
+postgres$ CREATE ROLE test_app WITH CREATEDB LOGIN PASSWORD 'test_app';
+postgres$ \\du
 ```
 
 After following the commands, we should now see an output table of the Postgres
@@ -139,9 +139,9 @@ roles, and our new `test_app` user should be on the list.
 Now we need to give this new user some databases.
 
 ```sql
-postgres# CREATE DATABASE test_app_dev OWNER test_app;
-postgres# CREATE DATABASE test_app_test OWNER test_app;
-postgres# \l
+postgres$ CREATE DATABASE test_app_dev OWNER test_app;
+postgres$ CREATE DATABASE test_app_test OWNER test_app;
+postgres$ \\l
 ```
 
 ```
@@ -167,7 +167,7 @@ sure everything went well.
 Finally, we're going to pop back out of psql and run our Rails migration.
 
 ```sql
-postgres# \q
+postgres$ \\q
 ```
 
 ```sh
