@@ -41,6 +41,7 @@
   },
   "type": "module",
   "dependencies": {
-    "devicon": "^2.16.0"
+    "devicon": "^2.16.0",
+    "mdsvex": "^0.11.0"
   }
 }
