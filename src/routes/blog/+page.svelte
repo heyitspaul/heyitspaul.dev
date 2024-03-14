@@ -20,4 +20,3 @@
         <div class="divider"></div>
     {/each}
 </div>
-"
