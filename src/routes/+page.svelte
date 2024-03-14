@@ -2,16 +2,10 @@
     <h1 class="font-semibold text-5xl mb-2">hey, it's Paul</h1>
     <h2 class="font-semibold text-3xl mb-2">Welcome to my personal site.</h2>
     <p>
-        The frontend <a
+        The entire website <a
             href="https://github.com/heyitspaul/heyitspaul.dev"
             class="text-blue-600 hover:underline"
             target="_blank">is built with SvelteKit</a
-        >
-        and the backend
-        <a
-            href="https://github.com/heyitspaul/heyitspaul.dev-api"
-            class="text-blue-600 hover:underline"
-            target="_blank">is built with Ruby on Rails</a
         >.
     </p>
     <div class="spacer"></div>
