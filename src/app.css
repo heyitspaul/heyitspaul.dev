@@ -7,3 +7,71 @@
     @apply mb-[3rem];
   }
 }
+
+.blog-content {
+    p {
+        @apply mb-[1rem];
+    }
+    a {
+        @apply text-blue-500;
+        @apply hover:underline;
+    }
+    h1 {
+        @apply text-4xl;
+        @apply mb-[1rem];
+    }
+    h2 {
+        @apply text-3xl;
+        @apply mb-[1rem];
+    }
+    h3 {
+        @apply text-2xl;
+        @apply mb-[1rem];
+    }
+    h4 {
+        @apply text-xl;
+        @apply mb-[1rem];
+    }
+    ul {
+        @apply list-disc;
+        @apply ml-[2rem];
+        @apply mb-[1rem];
+    }
+    pre {
+        @apply p-3;
+        @apply rounded-lg;
+        @apply bg-gray-900;
+        @apply text-white;
+        @apply mb-[1rem];
+
+        overflow: scroll;
+
+        .language-sh {
+            .token.function,
+            .token.builtin {
+                @apply text-blue-500;
+            }
+        }
+
+        .language-yaml {
+            .token.key {
+                @apply text-blue-500;
+            }
+            .token.comment {
+                @apply text-gray-500;
+            }
+            .token.important {
+                @apply text-red-500;
+            }
+        }
+
+        .language-sql {
+            .token.keyword {
+                @apply text-blue-500;
+            }
+            .token.string {
+                @apply text-green-500;
+            }
+        }
+    }
+}
