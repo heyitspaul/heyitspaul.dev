@@ -21,3 +21,7 @@ export const get_blog_slugs = async () => {
     let posts = fetch_markdown_posts();
     return (await posts).map((post) => post.path.slice(5));
 }
+
+export const get_human_date = (date: string) => {
+    return new Date(date).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' });
+}
