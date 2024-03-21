@@ -36,13 +36,13 @@ Most distributions will have a recent-ish version of Postgres available from
 the built-in package manager without prior setup requried.
 
 For Debian/Ubuntu this should get you set up and running:
-```sh
+```sh-session
 $ sudo apt update
 $ sudo apt install postgresql libpq-dev
 ```
 
 For Homebrew on macOS:
-```sh
+```sh-session
 $ brew install postgresql libpq-dev
 ```
 
@@ -54,7 +54,7 @@ Now we need to actually get Postgres running. Most Unix-like OSes have the
 services. If the following command doesn't work, double check the Postgres
 startup process for your specific operating system.
 
-```sh
+```sh-session
 $ sudo service postgresql start
 ```
 
@@ -69,7 +69,7 @@ Next we're going to set up a toy rails app so we can make sure our database
 connection actually works from Rails (you can always just use an existing app
 but for demonstration purposes we'll be starting fresh).
 
-```sh
+```sh-session
 $ rails new test_app --database=postgresql
 $ cd test_app
 ```
@@ -77,7 +77,7 @@ $ cd test_app
 Next we're going to add an Account model to the app so we have something to
 migrate against the database.
 
-```sh
+```sh-session
 $ rails generate model Account username:string
 ```
 
@@ -116,7 +116,7 @@ deployment and we only want to focus on getting Postgres running locally.
 The next step is to create the `test_app` role which our app will be using to
 log into Postgres in order to create, drop, or modify data.
 
-```sh
+```sh-session
 $ sudo -u postgres psql
 ```
 
@@ -170,7 +170,7 @@ Finally, we're going to pop back out of psql and run our Rails migration.
 postgres$ \\q
 ```
 
-```sh
+```sh-session
 $ rails db:migrate
 ```
 
