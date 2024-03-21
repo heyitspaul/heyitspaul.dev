@@ -18,21 +18,23 @@
         @apply text-blue-500;
         @apply hover:underline;
     }
+    h1, h2, h3, h4, h5 {
+        @apply mt-[2rem];
+        @apply mb-[0.5rem];
+        @apply font-bold;
+        @apply text-lg;
+    }
     h1 {
         @apply text-4xl;
-        @apply mb-[1rem];
     }
     h2 {
         @apply text-3xl;
-        @apply mb-[1rem];
     }
     h3 {
         @apply text-2xl;
-        @apply mb-[1rem];
     }
     h4 {
         @apply text-xl;
-        @apply mb-[1rem];
     }
     ul {
         @apply list-disc;
@@ -42,6 +44,6 @@
     pre {
         @apply p-3;
         @apply rounded-lg;
-        @apply mb-[1rem];
+        @apply mb-[1.5rem];
     }
 }
