@@ -13,6 +13,7 @@
     <p>I've been writing Ruby, Rails, PHP, and JavaScript code since 2014.</p>
     <p>I have a passion for web development and design.</p>
     <p>Recently I've been exploring using TailwindCSS and SvelteKit.</p>
+    <p>I'm also learning Godot now!</p>
     <div class="spacer"></div>
     <p>
         Check out my <a href="/blog" class="text-blue-600 hover:underline">blog</a> for insights into
