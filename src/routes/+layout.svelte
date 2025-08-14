@@ -2,6 +2,9 @@
     import '../app.css';
     import 'devicon/devicon.min.css';
     import { page } from '$app/stores';
+    import { browser } from '$app/environment';
+    import { beforeNavigate, afterNavigate } from '$app/navigation';
+    import posthog from 'posthog-js';
 
     const menu_links = [
         {
@@ -21,6 +24,11 @@
             link: '/portfolio'
         }
     ];
+
+    if (browser) {
+        beforeNavigate(() => posthog.capture('$pageleave'));
+        afterNavigate(() => posthog.capture('$pageview'));
+    }
 </script>
 
 <div class="container mx-auto">
