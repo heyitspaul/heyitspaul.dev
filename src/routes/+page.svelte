@@ -1,3 +1,12 @@
+<svelte:head>
+    <title>heyitspaul.dev</title>
+    <meta name="description" content="NJ-based software engineer and DevOps specialist." />
+    <meta property="og:title" content="heyitspaul.dev" />
+    <meta property="og:description" content="NJ-based software engineer and DevOps specialist." />
+    <meta property="og:url" content="https://heyitspaul.dev" />
+    <meta property="og:type" content="website" />
+</svelte:head>
+
 <div class="text-center">
     <h1 class="font-semibold text-5xl mb-2">hey, it's Paul</h1>
     <h2 class="font-semibold text-3xl mb-2">Welcome to my personal site.</h2>

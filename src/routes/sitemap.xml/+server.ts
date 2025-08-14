@@ -6,7 +6,7 @@ export const GET: RequestHandler = async ({ params }) => {
     const blog_slugs = await get_blog_slugs();
     return await sitemap.response({
         origin: 'https://heyitspaul.dev',
-        page: params.page,
+        page: params.slug,
         maxPerPage: 50_000,
         paramValues: {
             '/blog/[slug]': blog_slugs,

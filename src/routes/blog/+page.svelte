@@ -4,6 +4,14 @@
     export let data;
 </script>
 
+<svelte:head>
+    <title>Blog - heyitspaul.dev</title>
+    <meta name="description" content="A blog about my experiences with technology and life." />
+    <meta property="og:title" content="Blog - heyitspaul.dev" />
+    <meta property="og:description" content="A blog about my experiences with technology and life." />
+    <meta property="og:url" content="https://heyitspaul.dev/blog" />
+</svelte:head>
+
 <div class="container max-w-4xl mx-auto px-10">
     <div class="text-center">
         <h1 class="font-semibold text-5xl mb-2">Blog</h1>
