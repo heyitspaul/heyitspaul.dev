@@ -1,6 +1,5 @@
-@import "tailwindcss/base";
-@import "tailwindcss/components";
-@import "tailwindcss/utilities";
+@import "tailwindcss";
+@plugin "daisyui";
 
 @import "prism-themes/themes/prism-one-dark.min.css";
 
@@ -8,6 +7,11 @@
   .spacer {
     @apply mb-[3rem];
   }
+}
+
+.active {
+    @apply bg-slate-700;
+    @apply text-primary-content;
 }
 
 .blog-content {
