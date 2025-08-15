@@ -1,21 +1,42 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 <svg width="100%" height="100%" viewBox="0 0 200 200" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+    <!-- Glow Filters -->
+    <defs>
+        <!-- Glow for darker green -->
+        <filter id="darkGlow" x="-50%" y="-50%" width="200%" height="200%">
+        <feGaussianBlur in="SourceGraphic" stdDeviation="1.8" result="blur" />
+        <feMerge>
+            <feMergeNode in="blur" />
+            <feMergeNode in="SourceGraphic" />
+        </feMerge>
+        </filter>
+
+        <!-- Glow for lighter green -->
+        <filter id="lightGlow" x="-50%" y="-50%" width="200%" height="200%">
+        <feGaussianBlur in="SourceGraphic" stdDeviation="3.5" result="blur" />
+        <feMerge>
+            <feMergeNode in="blur" />
+            <feMergeNode in="SourceGraphic" />
+        </feMerge>
+        </filter>
+    </defs>
+    
     <path d="M200,25L200,175C200,188.798 188.798,200 175,200L25,200C11.202,200 0,188.798 0,175L0,25C0,11.202 11.202,0 25,0L175,0C188.798,0 200,11.202 200,25Z" style="fill:rgb(30,30,30);"/>
     <g transform="matrix(1.20253,0,0,1.20253,99.1176,105.441)">
         <g transform="matrix(1,0,0,1,0.5,-33.5)">
-            <text x="-66.526px" y="0px" style="font-family:'Consolas';font-size:22px;fill:rgb(0,119,51);">68 65 79 69</text>
+            <text x="-66.526px" y="0px" style="font-family:'Consolas';font-size:22px;fill:rgb(0,119,51);filter:url(#darkGlow);">68 65 79 69</text>
         </g>
         <g transform="matrix(1,0,0,1,0.5,-9.5)">
-            <text x="-66.526px" y="0px" style="font-family:'Consolas';font-size:22px;fill:rgb(0,119,51);">74 73</text>
-            <text x="6.048px" y="0px" style="font-family:'Consolas';font-size:22px;fill:rgb(102,255,204);">70 61</text>
+            <text x="-66.526px" y="0px" style="font-family:'Consolas';font-size:22px;fill:rgb(0,119,51);filter:url(#darkGlow);">74 73</text>
+            <text x="6.048px" y="0px" style="font-family:'Consolas';font-size:22px;fill:rgb(102,255,204);filter:url(#lightGlow);">70 61</text>
         </g>
         <g transform="matrix(1,0,0,1,0.5,14.5)">
-            <text x="-66.526px" y="0px" style="font-family:'Consolas';font-size:22px;fill:rgb(102,255,204);">75 6C</text>
-            <text x="6.048px" y="0px" style="font-family:'Consolas';font-size:22px;fill:rgb(0,119,51);">2E 64</text>
+            <text x="-66.526px" y="0px" style="font-family:'Consolas';font-size:22px;fill:rgb(102,255,204);filter:url(#lightGlow);">75 6C</text>
+            <text x="6.048px" y="0px" style="font-family:'Consolas';font-size:22px;fill:rgb(0,119,51);filter:url(#darkGlow);">2E 64</text>
         </g>
         <g transform="matrix(1,0,0,1,0.5,38.5)">
-            <text x="-66.526px" y="0px" style="font-family:'Consolas';font-size:22px;fill:rgb(0,119,51);">65 76 00 00</text>
+            <text x="-66.526px" y="0px" style="font-family:'Consolas';font-size:22px;fill:rgb(0,119,51);filter:url(#darkGlow);">65 76 00 00</text>
         </g>
     </g>
 </svg>
