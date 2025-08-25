@@ -10,6 +10,15 @@ dev learning proper Rails development to their own devices when it comes to
 actually setting up Postgres on their local environment."
 ---
 
+### Updated 08/25/2025:
+
+As of now you can just install and run <a href="https://dbngin.com/" target="_blank">DBngin</a>
+on both Windows and Mac to simplify the process. The default credentials will be
+username: postgres and password can be anything.
+
+---
+
+<br />
 Note: I am going to assume you have at least a little bit of experience in
 working with a Ruby on Rails app.
 
