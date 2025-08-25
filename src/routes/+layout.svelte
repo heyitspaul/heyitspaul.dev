@@ -52,7 +52,7 @@
 
     <slot />
 
-    <footer class="footer footer-center text-base-content py-10 mt-10 border-t">
+    <footer class="footer footer-center text-base-content py-10 mt-10 border-t border-slate-700">
         <nav class="md:grid md:grid-flow-col gap-4">
             <a href="/blog" class="link link-hover">Blog</a>
             <a href="/portfolio" class="link link-hover">Portfolio</a>
