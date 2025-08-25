@@ -37,7 +37,7 @@
 
     <div class="text-center space-y-2 px-4">
         <p>I began coding in 2010 with game development using C# with XNA and then Java.</p>
-        <p>I've been writing Ruby, Rails, PHP, and JavaScript code since 2014.</p>
+        <p>I've been a web developer since 2014.</p>
         <p>I have a passion for web development and design.</p>
         <p>Recently I've been exploring using TailwindCSS and SvelteKit.</p>
         <p>I'm also learning Godot now!</p>
