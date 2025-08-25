@@ -8,20 +8,24 @@
     <title>Blog - heyitspaul.dev</title>
     <meta name="description" content="A blog about my experiences with technology and life." />
     <meta property="og:title" content="Blog - heyitspaul.dev" />
-    <meta property="og:description" content="A blog about my experiences with technology and life." />
+    <meta
+        property="og:description"
+        content="A blog about my experiences with technology and life."
+    />
     <meta property="og:url" content="https://heyitspaul.dev/blog" />
 </svelte:head>
 
-<div class="container max-w-4xl mx-auto px-10">
+<div class="container max-w-6xl mx-auto px-6">
     <div class="text-center">
         <h1 class="font-semibold text-5xl mb-2">Blog</h1>
+        <p class="opacity-70">Articles and notes on software, tooling, and experiments.</p>
         <div class="spacer"></div>
     </div>
     {#each data.posts as post}
         <h2 class="font-semibold text-3xl mb-2">
-            <a href={post.path} class="text-blue-600 hover:underline">{post.meta.title}</a>
+            <a href={post.path} class="link link-hover text-primary">{post.meta.title}</a>
         </h2>
-        <p>
+        <p class="opacity-70">
             Published: {get_human_date(post.meta.date)}
         </p>
         <p class="mb-2">{post.meta.excerpt}</p>

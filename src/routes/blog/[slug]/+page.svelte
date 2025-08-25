@@ -13,7 +13,7 @@
     <meta property="og:type" content="article" />
 </svelte:head>
 
-<article class="container max-w-4xl mx-auto px-10">
+<article class="container max-w-4xl mx-auto px-4">
     <header>
         <h1 class="font-semibold text-5xl mb-2">{data.title}</h1>
         <p>
