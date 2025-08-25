@@ -188,7 +188,9 @@
                                 rel="noopener noreferrer external"
                                 class="btn btn-primary"
                                 aria-label={`View ${project.title} (opens in a new tab)`}
-                                >View
+                                >View <span class="material-symbols-rounded text-xs!"
+                                    >open_in_new</span
+                                >
                             </a>
                         {/if}
                     </div>
