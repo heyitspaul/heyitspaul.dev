@@ -8,5 +8,6 @@ export async function load({ params }) {
         title,
         date,
         excerpt,
+        slug: params.slug,
     };
 }
