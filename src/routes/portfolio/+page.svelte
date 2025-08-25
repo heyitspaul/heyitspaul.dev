@@ -1,19 +1,33 @@
-<script>
+<script lang="ts">
     let projects = [
+        {
+            title: 'FA Conferences (New)',
+            description: 'Website',
+            tech: 'Svelte, Tailwind CSS, TypeScript',
+            date: 'August 2025',
+            image: 'https://s3.us-east-1.wasabisys.com/heyitspaul/portfolio_images/faconfnew.avif',
+            link: 'https://fa-mag.com/conferences/iiw2026'
+        },
         {
             title: 'Paddock Court Trading',
             description: 'Website',
             tech: 'Svelte, Tailwind CSS',
-            devicons: ['devicon-svelte-plain colored', 'devicon-tailwindcss-plain colored'],
             date: 'January 2024',
             image: 'https://s3.us-east-1.wasabisys.com/heyitspaul/portfolio_images/paddock.avif',
             link: 'https://paddockcttrading.com'
         },
         {
+            title: 'FA Conferences',
+            description: 'Website',
+            tech: 'Wordpress, PHP, HTML, CSS, Sass, JavaScript',
+            date: 'February 2019 - June 2025',
+            image: 'https://s3.us-east-1.wasabisys.com/heyitspaul/portfolio_images/faconf.avif',
+            link: 'https://faconferences.com/iiw25'
+        },
+        {
             title: 'Matriarch',
             description: 'Library',
             tech: 'Rust',
-            devicons: ['devicon-rust-plain colored'],
             date: 'June 2018',
             image: 'https://s3.us-east-1.wasabisys.com/heyitspaul/portfolio_images/matriarch.png'
         },
@@ -21,13 +35,6 @@
             title: 'Terraform',
             description: 'Website',
             tech: 'Wordpress, PHP, HTML, CSS, JavaScript',
-            devicons: [
-                'devicon-wordpress-plain colored',
-                'devicon-php-plain colored',
-                'devicon-html5-plain-wordmark colored',
-                'devicon-css3-plain-wordmark colored',
-                'devicon-javascript-plain colored'
-            ],
             date: 'September 2017',
             image: 'https://s3.us-east-1.wasabisys.com/heyitspaul/portfolio_images/terraform.jpg'
         },
@@ -35,13 +42,6 @@
             title: 'The Haute Maven',
             description: 'Website',
             tech: 'Wordpress, PHP, HTML, CSS, JavaScript',
-            devicons: [
-                'devicon-wordpress-plain colored',
-                'devicon-php-plain colored',
-                'devicon-html5-plain-wordmark colored',
-                'devicon-css3-plain-wordmark colored',
-                'devicon-javascript-plain colored'
-            ],
             date: 'December 2016',
             image: 'https://s3.us-east-1.wasabisys.com/heyitspaul/portfolio_images/hautemaven.jpg'
         },
@@ -49,13 +49,6 @@
             title: 'Jacé Jewelers',
             description: 'Website',
             tech: 'Wordpress, PHP, HTML, CSS, JavaScript',
-            devicons: [
-                'devicon-wordpress-plain colored',
-                'devicon-php-plain colored',
-                'devicon-html5-plain-wordmark colored',
-                'devicon-css3-plain-wordmark colored',
-                'devicon-javascript-plain colored'
-            ],
             date: 'November 2016',
             image: 'https://s3.us-east-1.wasabisys.com/heyitspaul/portfolio_images/jace.jpg'
         },
@@ -63,13 +56,6 @@
             title: 'Bettye',
             description: 'Website',
             tech: 'Wordpress, PHP, HTML, CSS, JavaScript',
-            devicons: [
-                'devicon-wordpress-plain colored',
-                'devicon-php-plain colored',
-                'devicon-html5-plain-wordmark colored',
-                'devicon-css3-plain-wordmark colored',
-                'devicon-javascript-plain colored'
-            ],
             date: 'October 2016',
             image: 'https://s3.us-east-1.wasabisys.com/heyitspaul/portfolio_images/bettye.jpg'
         },
@@ -77,13 +63,6 @@
             title: 'Ayatana',
             description: 'Website',
             tech: 'Wordpress, PHP, HTML, CSS, JavaScript',
-            devicons: [
-                'devicon-wordpress-plain colored',
-                'devicon-php-plain colored',
-                'devicon-html5-plain-wordmark colored',
-                'devicon-css3-plain-wordmark colored',
-                'devicon-javascript-plain colored'
-            ],
             date: 'July 2016',
             image: 'https://s3.us-east-1.wasabisys.com/heyitspaul/portfolio_images/ayatana.jpg'
         },
@@ -91,13 +70,6 @@
             title: 'Atlantic Veterinary Hospital',
             description: 'Website',
             tech: 'Wordpress, PHP, HTML, CSS, JavaScript',
-            devicons: [
-                'devicon-wordpress-plain colored',
-                'devicon-php-plain colored',
-                'devicon-html5-plain-wordmark colored',
-                'devicon-css3-plain-wordmark colored',
-                'devicon-javascript-plain colored'
-            ],
             date: 'June 2016',
             image: 'https://s3.us-east-1.wasabisys.com/heyitspaul/portfolio_images/atlanticvh.jpg',
             link: 'https://atlanticvh.com/'
@@ -106,13 +78,6 @@
             title: 'LifExpressed',
             description: 'Website',
             tech: 'Wordpress, PHP, HTML, CSS, JavaScript',
-            devicons: [
-                'devicon-wordpress-plain colored',
-                'devicon-php-plain colored',
-                'devicon-html5-plain-wordmark colored',
-                'devicon-css3-plain-wordmark colored',
-                'devicon-javascript-plain colored'
-            ],
             date: 'May 2016',
             image: 'https://s3.us-east-1.wasabisys.com/heyitspaul/portfolio_images/lifexpressed.jpg'
         },
@@ -120,10 +85,6 @@
             title: 'Polar State',
             description: 'Website',
             tech: 'HTML, CSS',
-            devicons: [
-                'devicon-html5-plain-wordmark colored',
-                'devicon-css3-plain-wordmark colored'
-            ],
             date: 'February 2016',
             image: 'https://s3.us-east-1.wasabisys.com/heyitspaul/portfolio_images/polarstate.jpg'
         },
@@ -131,11 +92,6 @@
             title: 'Rezoundr',
             description: 'Website',
             tech: 'HTML, CSS, JavaScript',
-            devicons: [
-                'devicon-html5-plain-wordmark colored',
-                'devicon-css3-plain-wordmark colored',
-                'devicon-javascript-plain colored'
-            ],
             date: 'November 2015',
             image: 'https://s3.us-east-1.wasabisys.com/heyitspaul/portfolio_images/rezoundr.jpg',
             link: 'https://rezoundr.com'
@@ -144,11 +100,6 @@
             title: "Butch's Car Wash",
             description: 'Website',
             tech: 'HTML, CSS, JavaScript',
-            devicons: [
-                'devicon-html5-plain-wordmark colored',
-                'devicon-css3-plain-wordmark colored',
-                'devicon-javascript-plain colored'
-            ],
             date: 'September 2015',
             image: 'https://s3.us-east-1.wasabisys.com/heyitspaul/portfolio_images/butchscarwash.avif',
             link: 'https://butchscarwash.com'
@@ -157,11 +108,6 @@
             title: 'CollabMatch',
             description: 'Website',
             tech: 'AngularJS, JavaScript, CSS',
-            devicons: [
-                'devicon-angularjs-plain colored',
-                'devicon-javascript-plain colored',
-                'devicon-css3-plain-wordmark colored'
-            ],
             date: 'April 2015',
             image: 'https://s3.us-east-1.wasabisys.com/heyitspaul/portfolio_images/collabmatch.jpg',
             link: 'https://match.cosmicskymedia.com'
@@ -170,11 +116,6 @@
             title: 'Cosmic Sky Media',
             description: 'Website',
             tech: 'HTML, CSS, JavaScript',
-            devicons: [
-                'devicon-html5-plain-wordmark colored',
-                'devicon-css3-plain-wordmark colored',
-                'devicon-javascript-plain colored'
-            ],
             date: 'September 2014',
             image: 'https://s3.us-east-1.wasabisys.com/heyitspaul/portfolio_images/csm.jpg',
             link: 'https://cosmicskymedia.com'
@@ -183,7 +124,6 @@
             title: 'Pool Game',
             description: 'Video Game',
             tech: 'Java, OpenGL (via LWJGL)',
-            devicons: ['devicon-java-plain-wordmark colored', 'devicon-opengl-plain colored'],
             date: 'May 2012',
             image: 'https://s3.us-east-1.wasabisys.com/heyitspaul/portfolio_images/poolgame.png'
         },
@@ -191,7 +131,6 @@
             title: 'Project Z',
             description: 'Video Game',
             tech: 'C#, XNA',
-            devicons: ['devicon-csharp-plain colored'],
             date: 'March 2012',
             image: 'https://s3.us-east-1.wasabisys.com/heyitspaul/portfolio_images/projectz.png'
         }
@@ -211,34 +150,50 @@
     <p class="opacity-70">Projects I've worked on (non-exhaustive).</p>
 </div>
 
-<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-    {#each projects as project}
-        <div class="card">
+<ul
+    class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-8 px-2 lg:px-0"
+    aria-label="Projects"
+>
+    {#each projects as project (project.title)}
+        <li class="card card-border border-slate-700/50">
             <div class="card-body">
-                <img src={project.image} alt={project.title} class="w-full h-auto" />
-                <h2 class="card-title">{project.title}</h2>
+                <img
+                    src={project.image}
+                    alt={`${project.title} — ${project.description}`}
+                    class="w-full h-auto rounded-md"
+                    loading="lazy"
+                    decoding="async"
+                />
                 <div class="card-text">
-                    <p class="text-2xl flex flex-wrap gap-2">
-                        {#each project.devicons as devicon}
-                            <span class={devicon}></span>
-                        {/each}
-                    </p>
+                    <h2 class="card-title">{project.title}</h2>
+                    <p class="opacity-80">{project.description}</p>
+
+                    {#if project.tech && project.tech.split(',').some((x) => x.trim())}
+                        <ul class="flex flex-wrap gap-2 mt-2" aria-label="Technologies used">
+                            {#each project.tech
+                                .split(',')
+                                .map((s) => s.trim())
+                                .filter(Boolean) as tech}
+                                <li><span class="badge badge-outline">{tech}</span></li>
+                            {/each}
+                        </ul>
+                    {/if}
+
+                    <div class="card-actions mt-4 flex items-center justify-between">
+                        <span class="text-sm opacity-70">{project.date}</span>
+                        {#if project.link}
+                            <a
+                                href={project.link}
+                                target="_blank"
+                                rel="noopener noreferrer external"
+                                class="btn btn-primary"
+                                aria-label={`View ${project.title} (opens in a new tab)`}
+                                >View
+                            </a>
+                        {/if}
+                    </div>
                 </div>
-                <div class="card-text">
-                    <p>{project.description}</p>
-                    <p>{project.tech}</p>
-                    <p>{project.date}</p>
-                </div>
-                {#if project.link}
-                    <a
-                        href={project.link}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        class="btn btn-primary"
-                        >View
-                    </a>
-                {/if}
             </div>
-        </div>
+        </li>
     {/each}
-</div>
+</ul>
