@@ -155,7 +155,9 @@
     aria-label="Projects"
 >
     {#each projects as project (project.title)}
-        <li class="card card-border border-slate-700/50">
+        <li
+            class="card card-border bg-[#111418] drop-shadow-[3px_3px_8px_#111418]/85 transition-all duration-300"
+        >
             <div class="card-body">
                 <img
                     src={project.image}
