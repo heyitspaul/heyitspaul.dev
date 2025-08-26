@@ -147,7 +147,8 @@
 
 <div class="text-center px-4">
     <h1 class="font-semibold text-5xl">Portfolio</h1>
-    <p class="opacity-70">Projects I've worked on (non-exhaustive).</p>
+    <p class="opacity-70 mt-4">Projects I've worked on (non-exhaustive).</p>
+    <div class="spacer"></div>
 </div>
 
 <ul

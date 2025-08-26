@@ -17,8 +17,8 @@
 
 <div class="container max-w-6xl mx-auto px-6">
     <div class="text-center">
-        <h1 class="font-semibold text-5xl mb-2">Blog</h1>
-        <p class="opacity-70">Articles and notes on software, tooling, and experiments.</p>
+        <h1 class="font-semibold text-5xl">Blog</h1>
+        <p class="opacity-70 mt-4">Articles and notes on software, tooling, and experiments.</p>
         <div class="spacer"></div>
     </div>
     {#each data.posts as post, index}
