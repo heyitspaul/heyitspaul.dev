@@ -6,6 +6,10 @@
 
 @import "prism-themes/themes/prism-one-dark.min.css";
 
+@theme {
+    --color-main: #008f5a;
+}
+
 @layer base {
     html {
         scroll-behavior: smooth;
@@ -34,7 +38,7 @@
 
 .active {
     @apply bg-slate-700;
-    @apply text-primary-content;
+    @apply text-white;
 }
 
 .blog-content {
@@ -43,7 +47,7 @@
     }
 
     a {
-        @apply text-primary;
+        @apply text-main;
         @apply link link-hover;
     }
 

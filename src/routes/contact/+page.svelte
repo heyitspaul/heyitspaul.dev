@@ -12,14 +12,14 @@
     <p>
         My GitHub username is <a
             href="https://github.com/heyitspaul"
-            class="link link-hover text-primary"
+            class="link link-hover text-main"
             target="_blank">heyitspaul</a
         >.
     </p>
     <p>
         You can also email me with questions or job opportunities at <a
             href="mailto:paul@heyitspaul.dev"
-            class="link link-hover text-primary"
+            class="link link-hover text-main"
             target="_blank">paul@heyitspaul.dev</a
         >.
     </p>

@@ -24,7 +24,7 @@
                     >.
                 </p>
                 <div class="mt-6 flex flex-wrap items-center justify-center gap-3">
-                    <a href="/blog" class="btn btn-primary shadow-sm hover:shadow-md transition">
+                    <a href="/blog" class="btn bg-main shadow-sm hover:shadow-md transition">
                         Read the blog
                     </a>
                     <a href="/contact" class="btn btn-outline shadow-sm hover:shadow-md transition">

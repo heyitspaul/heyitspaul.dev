@@ -21,14 +21,16 @@
         <p class="opacity-70">Articles and notes on software, tooling, and experiments.</p>
         <div class="spacer"></div>
     </div>
-    {#each data.posts as post}
+    {#each data.posts as post, index}
         <h2 class="font-semibold text-3xl mb-2">
-            <a href={post.path} class="link link-hover text-primary">{post.meta.title}</a>
+            <a href={post.path} class="link link-hover text-main">{post.meta.title}</a>
         </h2>
         <p class="opacity-70">
             Published: {get_human_date(post.meta.date)}
         </p>
-        <p class="mb-2">{post.meta.excerpt}</p>
-        <div class="divider"></div>
+        <p class="mb-6">{post.meta.excerpt}</p>
+        {#if index !== data.posts.length - 1}
+            <div class="divider"></div>
+        {/if}
     {/each}
 </div>

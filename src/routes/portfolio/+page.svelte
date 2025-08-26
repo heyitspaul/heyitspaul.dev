@@ -188,7 +188,7 @@
                                 href={project.link}
                                 target="_blank"
                                 rel="noopener noreferrer external"
-                                class="btn btn-primary"
+                                class="btn bg-main"
                                 aria-label={`View ${project.title} (opens in a new tab)`}
                                 >View <span class="material-symbols-rounded text-xs!"
                                     >open_in_new</span
