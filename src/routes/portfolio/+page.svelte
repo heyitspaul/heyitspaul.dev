@@ -159,13 +159,15 @@
             class="card card-border bg-[#111418] drop-shadow-[3px_3px_8px_#111418]/85 transition-all duration-300"
         >
             <div class="card-body">
-                <img
-                    src={project.image}
-                    alt={`${project.title} — ${project.description}`}
-                    class="w-full h-auto rounded-md"
-                    loading="lazy"
-                    decoding="async"
-                />
+                <div class="flex justify-center items-center aspect-square object-contain">
+                    <img
+                        src={project.image}
+                        alt={`${project.title} — ${project.description}`}
+                        class="w-full h-auto rounded-md"
+                        loading="lazy"
+                        decoding="async"
+                    />
+                </div>
                 <div class="card-text">
                     <h2 class="card-title">{project.title}</h2>
                     <p class="opacity-80">{project.description}</p>
