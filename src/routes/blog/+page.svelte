@@ -1,7 +1,7 @@
 <script lang="ts">
     import { get_human_date } from '$lib/utils';
 
-    export let data;
+    let { data } = $props();
 </script>
 
 <svelte:head>

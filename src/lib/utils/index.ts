@@ -4,7 +4,7 @@ export const fetch_markdown_posts = async () => {
 
     const allPosts = await Promise.all(
         iterablePostFiles.map(async ([path, resolver]) => {
-            const { metadata } = await resolver();
+            const { metadata } = (await resolver()) as { metadata: Record<string, string> };
             const postPath = "blog" + path.slice(11, -3);
 
             return {

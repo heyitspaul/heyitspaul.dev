@@ -1,10 +1,12 @@
-<script>
+<script lang="ts">
     import '../app.css';
     import 'devicon/devicon.min.css';
     import { page } from '$app/state';
     import { browser } from '$app/environment';
     import { beforeNavigate, afterNavigate } from '$app/navigation';
     import posthog from 'posthog-js';
+
+    let { children } = $props();
 
     const menu_links = [
         {
@@ -41,16 +43,14 @@
             <ul class="menu menu-horizontal px-1">
                 {#each menu_links as link}
                     <li>
-                        <a href={link.link} class={link.link === page.url.pathname ? 'active' : ''}
-                            >{link.name}</a
-                        >
+                        <a href={link.link} class={link.link === page.url.pathname ? 'active' : ''}>{link.name}</a>
                     </li>
                 {/each}
             </ul>
         </div>
     </div>
 
-    <slot />
+    {@render children()}
 
     <footer class="footer footer-center text-base-content py-10 mt-10 border-t border-slate-700">
         <nav class="md:grid md:grid-flow-col gap-4">
