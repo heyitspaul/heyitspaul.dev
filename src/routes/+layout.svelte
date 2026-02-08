@@ -37,7 +37,7 @@
 
 <div class="container mx-auto">
     <div
-        class="navbar bg-base-100 sticky top-0 z-50 backdrop-blur supports-[backdrop-filter]:bg-base-100/80"
+        class="navbar bg-base-100 sticky top-0 z-50 backdrop-blur supports-backdrop-filter:bg-base-100/80"
     >
         <div class="flex-1 gap-2">
             <ul class="menu menu-horizontal px-1">
