@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght,SOFT@9..144,400..700,0&family=Manrope:wght@400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=open_in_new');
 
 @import "tailwindcss";
@@ -21,24 +21,75 @@
     h4,
     h5,
     h6 {
-        font-family: 'Montserrat', sans-serif;
+        font-family: 'Fraunces', serif;
+        letter-spacing: -0.015em;
     }
 
     body {
-        @apply leading-relaxed;
-        font-family: 'Inter', sans-serif;
+        @apply leading-relaxed text-[1.02rem];
+        font-family: 'Manrope', sans-serif;
     }
 }
 
 @layer components {
+    .site-shell {
+        @apply mx-auto px-4 sm:px-6 lg:px-8;
+        max-width: 78rem;
+    }
+
     .spacer {
-        @apply mb-[3rem];
+        @apply mb-14;
+    }
+
+    .ui-btn {
+        @apply inline-flex items-center justify-center gap-2 rounded-xl px-5 py-2.5;
+        @apply text-sm font-semibold tracking-[0.01em] no-underline;
+        @apply border border-transparent shadow-[0_6px_16px_rgba(0,0,0,0.22)];
+        @apply transition-[transform,box-shadow,background-color,border-color,color] duration-200 ease-out;
+        transform: translateY(0);
+        will-change: transform;
+    }
+
+    .ui-btn:hover {
+        transform: translateY(-2px);
+        @apply shadow-[0_10px_24px_rgba(0,0,0,0.30)];
+    }
+
+    .ui-btn:active {
+        transform: translateY(0);
+        @apply shadow-[0_4px_10px_rgba(0,0,0,0.18)];
+    }
+
+    .ui-btn:focus-visible {
+        @apply outline-none ring-2 ring-main/70 ring-offset-2 ring-offset-base-100;
+    }
+
+    .ui-btn-primary {
+        background-image: linear-gradient(135deg, color-mix(in oklab, var(--color-main) 90%, #ffffff) 0%, var(--color-main) 65%);
+        @apply text-white border-main/40;
+    }
+
+    .ui-btn-primary:hover {
+        background-image: linear-gradient(135deg, color-mix(in oklab, var(--color-main) 82%, #ffffff) 0%, color-mix(in oklab, var(--color-main) 92%, #0d131a) 70%);
+    }
+
+    .ui-btn-outline {
+        @apply bg-base-100/55 border-base-content/20 text-base-content;
+        backdrop-filter: blur(6px);
+    }
+
+    .ui-btn-outline:hover {
+        @apply bg-base-100 border-main/45 text-main;
+    }
+
+    .ui-btn-sm {
+        @apply px-4 py-2 text-xs;
     }
 }
 
 .active {
-    @apply bg-slate-700;
-    @apply text-white;
+    @apply bg-slate-700/85;
+    @apply text-white shadow-sm;
 }
 
 .blog-content {

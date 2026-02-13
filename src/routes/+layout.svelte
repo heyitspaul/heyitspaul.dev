@@ -35,15 +35,20 @@
     }
 </script>
 
-<div class="container mx-auto">
+<div class="site-shell">
     <div
-        class="navbar bg-base-100 sticky top-0 z-50 backdrop-blur supports-backdrop-filter:bg-base-100/80"
+        class="navbar bg-base-100 sticky top-0 z-50 backdrop-blur supports-backdrop-filter:bg-base-100/80 py-2 mb-6"
     >
         <div class="flex-1 gap-2">
-            <ul class="menu menu-horizontal px-1">
+            <ul class="menu menu-horizontal px-0 gap-1">
                 {#each menu_links as link}
                     <li>
-                        <a href={link.link} class={link.link === page.url.pathname ? 'active' : ''}>{link.name}</a>
+                        <a
+                            href={link.link}
+                            class={`rounded-md px-4 py-2 transition-colors ${link.link === page.url.pathname ? 'active' : 'hover:bg-base-200'}`}
+                        >
+                            {link.name}
+                        </a>
                     </li>
                 {/each}
             </ul>
@@ -52,7 +57,7 @@
 
     {@render children()}
 
-    <footer class="footer footer-center text-base-content py-10 mt-10 border-t border-slate-700">
+    <footer class="footer footer-center text-base-content py-12 mt-14 border-t border-slate-700/80">
         <nav class="md:grid md:grid-flow-col gap-4">
             <a href="/blog" class="link link-hover">Blog</a>
             <a href="/portfolio" class="link link-hover">Portfolio</a>

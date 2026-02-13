@@ -24,7 +24,9 @@
             <div class="card-body">
                 <h2 class="card-title">Email</h2>
                 <p class="text-sm text-base-content/70 mb-2">{emailAddress}</p>
-                <a class="btn btn-sm bg-main" href={`mailto:${emailAddress}`}>Open mail app</a>
+                <a class="ui-btn ui-btn-primary ui-btn-sm" href={`mailto:${emailAddress}`}>
+                    Open mail app
+                </a>
             </div>
         </div>
 
@@ -37,7 +39,7 @@
                     Check out my projects and contributions.
                 </p>
                 <a
-                    class="btn btn-sm bg-main"
+                    class="ui-btn ui-btn-primary ui-btn-sm"
                     href="https://github.com/heyitspaul"
                     target="_blank"
                     rel="noopener"

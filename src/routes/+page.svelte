@@ -24,10 +24,10 @@
                     >.
                 </p>
                 <div class="mt-6 flex flex-wrap items-center justify-center gap-3">
-                    <a href="/blog" class="btn bg-main shadow-sm hover:shadow-md transition">
+                    <a href="/blog" class="ui-btn ui-btn-primary">
                         Read the blog
                     </a>
-                    <a href="/contact" class="btn btn-outline shadow-sm hover:shadow-md transition">
+                    <a href="/contact" class="ui-btn ui-btn-outline">
                         Get in touch
                     </a>
                 </div>
